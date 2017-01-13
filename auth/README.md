@@ -7,4 +7,4 @@ This server handles user authentication. In our very simple case, it will only a
 
 ## Install & run
 
-Just run `npm install` in this repository to install the dependencies, then run either `npm start` or `node server.js` to start the server.
+Just run `npm install` in this directory to install the dependencies, then run either `npm start` or `node server.js` to start the server.
