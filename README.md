@@ -31,4 +31,4 @@ For now (not sure it'll last), you can try the whole thing at https://ent.brenda
 
 Why don't you try heading out on https://ent.brendanabolivier.com/auth/, logging in, then accessing https://ent.brendanabolivier.com/service1/? :wink:
 
-Then you can try out authing on https://ent.brendanabolivier.com/auth/teacher and re-trying accessing `service1` :smile:
+Then you can try and auth on https://ent.brendanabolivier.com/auth/teacher and re-trying accessing `service1` :smile:
