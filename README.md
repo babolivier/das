@@ -27,4 +27,8 @@ Please keep in mind that, although this might not a very impressive use of Macar
 
 ## Try it out
 
-For now (not sure it'll last), you can try the whole thing at https://ent.brendanabolivier.com/, by adding the desired service in the URI (`/auth` for the authentication server, `/service1` for the PHP service).
+For now (not sure it'll last), you can try the whole thing at https://ent.brendanabolivier.com/, by adding the desired service in the URI (`/auth` for the authentication server, `/service1` for the PHP service). Connections aren't logged on this server.
+
+Why don't you try heading out on https://ent.brendanabolivier.com/auth/, logging in, then accessing https://ent.brendanabolivier.com/service1/? :wink:
+
+Then you can try out authing on https://ent.brendanabolivier.com/auth/teacher and re-trying accessing `service1` :smile:
