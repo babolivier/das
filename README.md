@@ -6,7 +6,7 @@ Decentral Authentication Service
 
 DAS is a proof of concept of a digital workspace as used in school. Most of them use [Apereo's CAS](https://github.com/apereo/cas) (sometimes known as Jasig), which handles authentification in a centralised way.
 
-There's one downside to this: it requires a JEE server to run, now always easy to configure, sometimes ressources-hungry, and slows each authentication to a service by requiring additional requests between both the service and the CAS server, and the CAS server and the client.
+There's one downside to this: it requires a JEE server to run, not always easy to configure, sometimes ressources-hungry, and slows each authentication to a service by requiring additional requests between both the service and the CAS server, and the CAS server and the client.
 
 That's where [Macaroons](http://hackingdistributed.com/2014/05/21/my-first-macaroon/) come in the game. Macaroons are an easy way to implement decentralised authentication, and we'll use them to get rid of the CAS server, and allow an user to authenticate to a service without having to talk that often with the authentication service.
 
