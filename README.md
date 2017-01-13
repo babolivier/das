@@ -24,3 +24,7 @@ At the time this file was written, the repository contains the following directo
 * `service1` is a PHP service which authenticate an user based on their Macaroons, and only allow a teacher to access it.
 
 Please keep in mind that, although this might not a very impressive use of Macaroons, it is still a work in progress.
+
+## Try it out
+
+For now (not sure it'll last), you can try the whole thing at https://ent.brendanabolivier.com/, by adding the desired service in the URI (`/auth` for the authentication server, `/service1` for the PHP service).
