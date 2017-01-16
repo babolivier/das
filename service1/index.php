@@ -29,7 +29,8 @@ try {
 }
 
 if($bool) {
-	echo "Access granted.\n<br />Welcome ".$m->getIdentifier()."!";
+	$name = join(" ", explode(";", $m->getIdentifier()));
+	echo "Access granted.\n<br />Welcome ".$name."!";
 } else {
 	echo "Access denied. Service is restricted to teachers.";
 }
