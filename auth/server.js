@@ -18,7 +18,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.post('/', function(req, res, next) {
-	var identifier = req.body.username;
+	var identifier = req.body.first+';'+req.body.last;
 
 	var m = new MacaroonsBuilder(location, secretKey, identifier)
 		.add_first_party_caveat("status = student")
@@ -26,7 +26,7 @@ app.post('/', function(req, res, next) {
 
 	res.cookie('das-macaroon', m.serialize());
 
-	res.send('Logged in as ' + req.body.username + ' (student)');
+	res.send('Logged in as ' + req.body.first + ' ' + req.body.last + ' (student)');
 });
 
 app.get('/teacher', function(req, res, next) {
@@ -34,7 +34,7 @@ app.get('/teacher', function(req, res, next) {
 });
 
 app.post('/teacher', function(req, res, next) {
-	var identifier = req.body.username;
+	var identifier = req.body.first+';'+req.body.last;
 
 	var m = new MacaroonsBuilder(location, secretKey, identifier)
 		.add_first_party_caveat("status = teacher")
@@ -42,7 +42,7 @@ app.post('/teacher', function(req, res, next) {
 
 	res.cookie('das-macaroon', m.serialize());
 
-	res.send('Logged in as ' + req.body.username + ' (teacher)');
+	res.send('Logged in as ' + req.body.first + ' ' + req.body.last + ' (teacher)');
 });
 
 app.listen(1337, function() {
