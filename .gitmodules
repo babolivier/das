@@ -1,0 +1,3 @@
+[submodule "moodle_macaroons"]
+	path = moodle_macaroons
+	url = https://github.com/babolivier/moodle_macaroons.git
